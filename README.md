@@ -1,2 +1,2 @@
-# methika-portfilio
+# methika-portfolio
 Methika Portfolio Website
