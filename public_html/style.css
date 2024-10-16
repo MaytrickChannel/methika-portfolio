@@ -11,7 +11,12 @@ body {
     padding-bottom: 5rem;
 }
 
+#containerIntro h3,
+#containerIntro p{
+    display: inline;
+    vertical-align: top;
 
+}
 
 
 
