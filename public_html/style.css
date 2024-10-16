@@ -1,4 +1,8 @@
+
+
+
 body {
+    font-family: SansSerif;
     font-size: 25px;
     line-height: 40px;
     padding-top: 5rem;
@@ -15,6 +19,10 @@ h1 {
     text-align: center;
 }
 h2 {
+    font-size: 30px;
     text-align: center;
 }
 
+p{
+    color:slategray ;
+}
