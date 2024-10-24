@@ -1,0 +1,35 @@
+body {
+    font-family: SansSerif;
+    font-size: 25px;
+    line-height: 40px;
+    padding-top: 5rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    padding-bottom: 5rem;
+}
+
+h1 {
+    text-align: center;
+    color: #0e0e0e;
+}
+
+h2 {
+    text-align: center;
+    color: #2e2e2e;
+}
+
+h3 {
+    color: #3d3e3e;
+}
+
+p {
+    color: #5d6060;
+}
+li {
+    color: #5d6060;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
