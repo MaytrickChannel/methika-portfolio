@@ -1,12 +1,15 @@
 
-
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
 
 body {
     font-family: SansSerif;
     font-size: 25px;
     line-height: 40px;
     padding-top: 5rem;
-   padding-right: 20rem;
+    padding-right: 20rem;
     padding-left: 20rem;
     padding-bottom: 5rem;
 }

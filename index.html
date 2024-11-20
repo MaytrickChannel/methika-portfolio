@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+    <script type="text/javascript" src="src/main.js"></script>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+
+<body class="font- font-sans">
+
+<!--Title Nav bar-->
+<nav class="fixed w-full z-20 top-0 start-0 md:bg-black">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button onclick="expandNavbar()" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                     viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col w-fit p-4 md:p-0 mt-4 bg-opacity-50 bg-black font-medium bg-#[123123] md:bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+                <li>
+                    <a href="#home"
+                       class="block py-2 px-3 text-yellow-400 rounded md:hover:bg-transparent hover:text-gray-400 md:p-0 md:dark:hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                       onclick="closeNavbar();">Home</a>
+                </li>
+                <li>
+                    <a href="#about"
+                       class="block py-2 px-3 text-yellow-400 rounded md:hover:bg-transparent hover:text-gray-400 md:p-0 md:dark:hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                       onclick="closeNavbar()">About</a>
+                </li>
+                <li>
+                    <a href="#project"
+                       class="block py-2 px-3 text-yellow-400 rounded md:hover:bg-transparent hover:text-gray-400 md:p-0 md:dark:hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                       onclick="closeNavbar()">Project</a>
+                </li>
+                <li>
+                    <a href="#resume"
+                       class="block py-2 px-3 text-yellow-400 rounded md:hover:bg-transparent hover:text-gray-400 md:p-0 md:dark:hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                       onclick="closeNavbar()">Resume</a>
+                </li>
+                <li>
+                    <a href="#contact"
+                       class="block py-2 px-3 text-yellow-400 rounded md:hover:bg-transparent hover:text-gray-400 md:p-0 md:dark:hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                       onclick="closeNavbar()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Home Page-->
+
+<!--Video Background-->
+<video autoplay loop muted class="fixed min-w-full h-full max-w-none -translate-x-1/2 ml-[50vw] bg-black">
+    <source src="src/globe.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+</video>
+
+<!--            <p>Welcome To Methika's World</p>-->
+<div class="w-full absolute text-center text-3xl">
+    <div id="home" class="h-screen place-content-center">
+        <div class="text-white bg-black bg-opacity-70 inline-block px-2 rounded">
+            <p class="text-4xl mb-1">Hello, I’m <span class="text-yellow-400">Methika</span></p>
+            <p class="text-2xl py-1">I’m a Full-Stack Developer & UI/UX Designer. </p>
+            <p class="text-xl">Bringing innovative web solutions to life with creativity and code.</p>
+        </div>
+
+        <div>
+            <a href="#project">
+                <button type="button"
+                        class="py-1 px-5 me-2 mb-2 text-sm font-medium text-yellow-400 focus:outline-yellow-400  rounded-lg border border-yellow-400 hover:text-white   dark:text-white dark:border-yellow-400 dark:hover:text-white  mt-4">
+                    View My Work
+                </button>
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/dd-fullstack-cohort-47/react-challenge-MaytrickChannel">
+                <button type="button" class="w-8 invert m-2">
+                    <img src="src/github-logo.png" alt="github icon">
+                </button>
+            </a>
+            <button type="button" class="w-8 invert m-2">
+                <img src="src/linkedin.png" alt="github icon">
+            </button>
+        </div>
+    </div>
+
+
+    <!--    About Page-->
+    <div id="about" class="bg-black h-auto min-h-full place-content-center px-2 py-8">
+        <div class="text-white px-8">
+            <h2 class="text-3xl mb-2 mt-4">Meet Methika</h2>
+            <p class="text-xl mt-6">I’m Methika, a Full Stack Web Development student with a background in UI/UX design and
+                content creation. I have experience in game design, community support, and running my own business,
+                which has given me a strong foundation in problem-solving, creativity, and teamwork. I’m passionate
+                about building user-friendly, visually appealing digital solutions and am eager to apply my skills in a
+                dynamic and growing tech environment.</p>
+        </div>
+        <div class="mt-12">
+            <button type="button"
+                    class="py-1 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 mt-4">
+                Resume
+            </button>
+        </div>
+        <div>
+            <div class="wrapper">
+                <div class="item item1">
+                    <p class="text-base text-center">GitHub</p>
+                </div>
+                <div class="item item2">
+                    <p class="text-base text-center">Java Script</p>
+                </div>
+                <div class="item item3">
+                    <p class="text-base text-center">Type Script</p>
+                </div>
+                <div class="item item4">
+                    <p class="text-base text-center">HTML</p>
+                </div>
+                <div class="item item5">
+                    <p class="text-base text-center">React</p>
+                </div>
+                <div class="item item6">
+                    <p class="text-base text-center">Tailwind</p>
+                </div>
+                <div class="item item7">
+                    <p class="text-base text-center">CSS</p>
+                </div>
+                <div class="item item8">
+                    <p class="text-base text-center">Node JS</p>
+                </div>
+                <div class="item item9">
+                    <p class="text-base text-center">PostgreSQL</p>
+                </div>
+                <div class="item item10">
+                    <p class="text-base text-center">Express</p>
+                </div>
+                <div class="item item11">
+                    <p class="text-base text-center">Figma</p>
+                </div>
+                <div class="item item12">
+                    <p class="text-base text-center">Miro</p>
+                </div>
+                <div class="item item13">
+                    <p class="text-base text-center">Project Management</p>
+                </div>
+                <div class="item item14">
+                    <p class="text-base text-center">Bilingual Customer Service</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--    Project page-->
+    <div id="project" class="bg-amber-900 h-auto min-h-full place-content-center px-2 py-8">
+        <div class="text-white">
+            <h2>Projects</h2>
+
+            <div class="flex flex-col m-4">
+                <img src="https://picsum.photos/id/362/400/130" class="self-center">
+                <div class="text-center ml-5 w-auto">
+                    <h1 class="text-lg">Project Name</h1>
+                    <h2 class="text-lg">Skills - UI/UX Design</h2>
+                    <div class="flex flex-row place-content-center">
+                        <img src="src/github-logo.png" class="w-8 m-2">
+                        <img src="src/github-logo.png" class="w-8 m-2">
+                        <img src="src/github-logo.png" class="w-8 m-2">
+                    </div>
+                    <button type="button"
+                            class="py-1 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-black rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 mt-4">
+                        View
+                    </button>
+                    <button type="button"
+                            class="py-1 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-white  rounded-lg border border-gray-200  hover:text-gray-700  focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700  dark:text-gray-400 dark:border-gray-600 dark:hover:text-white mt-4">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col m-4">
+                <img src="https://picsum.photos/id/367/400/130" class="self-center">
+                <div class="text-center ml-5 w-auto">
+                    <h1 class="text-lg">Project Name</h1>
+                    <h2 class="text-lg">Skills - UI/UX Design</h2>
+                    <div class="flex flex-row place-content-center">
+                        <img src="src/github-logo.png" class="w-8 m-2">
+                        <img src="src/github-logo.png" class="w-8 m-2">
+                        <img src="src/github-logo.png" class="w-8 m-2">
+                    </div>
+                    <!--                    <button class="bg-black rounded px-2">View</button>-->
+                    <button type="button"
+                            class="py-1 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-black rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 mt-4">
+                        View
+                    </button>
+                    <button type="button"
+                            class="py-1 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-black rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 mt-4">
+                        Github
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--    Resume Page-->
+    <div id="resume" class="bg-red-600 h-auto min-h-full place-content-center px-2 py-8">
+        <div class="text-white">
+            Testimonials
+
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
+                <a href="#">
+                    <img class="rounded-t-lg w-40 mx-auto mt-6" src="/src/github-logo.png" alt=""/>
+                </a>
+                <div class="p-5">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            technology acquisitions 2021</h5>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--    Contact Page-->
+    <div id="contact" class="bg-green-700 h-auto min-h-full place-content-center px-2 py-8">
+        <div class="text-white">
+            <div class="flex flex-col md:flex-row">
+                <img src="https://picsum.photos/id/367/300/300" class="mx-auto md:ml-14"/>
+                <div class="mx-auto flex flex-col">
+                    <h1 class="font-bold">
+                        Let's work together!
+                    </h1>
+                    <h2 class="text-lg">
+                        For job inquiries, collaborations, or freelance work, feel free to contact me. I'll get back to
+                        you as soon as possible. Let's create something amazing together!
+                    </h2>
+
+                    <div class="text-left mx-2">
+                        Email
+                    </div>
+
+                    <input class="bg-black grow-0 mx-2 text-xl px-2" placeholder="Your email">
+
+                    <div class="text-left mx-2">
+                        Name
+                    </div>
+
+                    <input class="bg-black grow-0 mx-2 text-xl px-2" placeholder="Your name">
+
+                    <div class="text-left mx-2">
+                        Message
+                    </div>
+                    <textarea class="bg-black grow mx-2 text-xl px-2 py-0 resize-none"
+                              placeholder="Write your message here..."></textarea>
+
+                    <button class="bg-black mx-auto px-2 py-1 m-2 rounded">Send Message</button>
+
+                </div>
+
+            </div>
+        </div>
+        <a href="#project">
+            <img src="src/up-arrow-button.png" class="w-8 ml-auto mr-4" alt="up-arrow"/>
+
+        </a>
+    </div>
+</div>
+
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
