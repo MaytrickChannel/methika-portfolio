@@ -335,21 +335,21 @@
                                     Email
                                 </div>
 
-                                <input class="bg-black grow-0 mx-2 text-xl px-2" placeholder="Your email">
+                                <input id="emailFormEmail" class="bg-black grow-0 mx-2 text-xl px-2" placeholder="Your email">
 
                                 <div class="text-base text-left mx-2 text-yellow-400 pt-1">
                                     Name
                                 </div>
 
-                                <input class="bg-black grow-0 mx-2 text-xl px-2" placeholder="Your name">
+                                <input id="emailFormSubject" class="bg-black grow-0 mx-2 text-xl px-2" placeholder="Your name">
 
                                 <div class="text-base text-left mx-2 text-yellow-400 py-1">
                                     Message
                                 </div>
-                                <textarea class="bg-black grow mx-2 text-xl px-2 py-0 resize-none"
+                                <textarea id="emailFormBody" class="bg-black grow mx-2 text-xl px-2 py-0 resize-none"
                                           placeholder="Write your message here..."></textarea>
 
-                                <a href="mailto:maytrickchannel@gmail.com" class="text-yellow-400 mt-4">Send email</a>
+                                <button onclick="sendEmail()" class="text-yellow-400 mt-4">Send email</button>
 
 
                             </div>

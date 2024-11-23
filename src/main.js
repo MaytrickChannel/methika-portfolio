@@ -11,3 +11,17 @@ function closeNavbar() {
 }
 document.closeNavbar = closeNavbar;
 document.expandNavbar = expandNavbar;
+
+
+export function sendEmail() {
+    const recipient = "maytrickchannel@gmail.com";
+    const subject = document.getElementById('emailFormSubject').value;
+    const body = document.getElementById('emailFormBody').value;
+
+    console.log(recipient)
+    console.log(subject)
+    console.log(body)
+
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+document.sendEmail = sendEmail;
