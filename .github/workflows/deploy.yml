@@ -25,4 +25,4 @@ jobs:
       - name: Deploy to server
         run: |
           ssh-keyscan -H methika-developer.com >> ~/.ssh/known_hosts 
-          scp -r ./dist/* methika-developer@methika-developer.com:/var/www/methika-developer.com/html
+          scp -r ./dist/* mnithimatechak@methika-developer.com:/var/www/methika-developer.com/html
